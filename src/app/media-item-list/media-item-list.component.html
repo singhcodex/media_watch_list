@@ -1,4 +1,8 @@
+<header>
+  <div>{{ mediaItems | categoryList }}</div>
+</header>
 <section class="custom-container">
+
     <app-watch-item *ngFor="let mediaItem of mediaItems"
     [mediaItem]="mediaItem"
     [ngClass]="{'medium-movies': mediaItem.medium === 'Movies', 'medium-series': mediaItem.medium === 'Series'}"

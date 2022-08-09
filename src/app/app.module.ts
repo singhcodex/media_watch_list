@@ -13,11 +13,15 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list'
 
 import { MediaItemListComponent } from './media-item-list/media-item-list.component';
+import { FavouriteDirective } from './favourite.directive';
+import { CategoryListPipe } from './category-list.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     WatchItemComponent,
-    MediaItemListComponent
+    MediaItemListComponent,
+    FavouriteDirective,
+    CategoryListPipe
   ],
   imports: [
     BrowserModule,

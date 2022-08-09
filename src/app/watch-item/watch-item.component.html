@@ -1,8 +1,8 @@
 <mat-card class="custom-card">
-  <mat-card-title>{{ mediaItem.name }}</mat-card-title>
+  <mat-card-title>{{ mediaItem.name | slice: 0: 10 }}</mat-card-title>
   <mat-card-content>
     <ng-template [ngIf]="mediaItem.watchedOn">
-      <div>watched on {{ mediaItem.watchedOn }}</div>
+      <div>watched on {{ mediaItem.watchedOn | date: 'shortDate' }}</div>
     </ng-template>
 
 
@@ -10,7 +10,9 @@
     <div>{{ mediaItem.year }}</div>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-icon-button color="accent" aria-label="Example icon button with a favorite icon">
+    <button
+      [appFavourite]="mediaItem.isFavorite"
+      mat-icon-button color="accent" aria-label="Example icon button with a favorite icon">
       <mat-icon>favorite</mat-icon>
     </button>
     <button (click)="onDelete()" mat-icon-button color="primary" aria-label="Example icon button with a delete icon">
