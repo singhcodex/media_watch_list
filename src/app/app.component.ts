@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'watch-list-app';
+  firstMediaItem = {
+    id: 1,
+    name: 'FireBug',
+    medium: 'Series',
+    category: 'Science Fiction',
+    year: 2020,
+    watchedOn: 2134545,
+    isFavorite: false
+  }
 }
