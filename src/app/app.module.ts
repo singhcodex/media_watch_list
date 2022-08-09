@@ -10,16 +10,20 @@ import { WatchItemComponent } from './watch-item/watch-item.component';
 import {MatCardModule} from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {MatGridListModule} from '@angular/material/grid-list'
+
+import { MediaItemListComponent } from './media-item-list/media-item-list.component';
 @NgModule({
   declarations: [
     AppComponent,
-    WatchItemComponent
+    WatchItemComponent,
+    MediaItemListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatCardModule,MatIconModule,MatButtonModule
+    MatCardModule,MatIconModule,MatButtonModule,MatGridListModule
   ],
   exports:[
     MatCardModule,MatIconModule,MatButtonModule

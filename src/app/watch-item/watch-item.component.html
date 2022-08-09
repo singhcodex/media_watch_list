@@ -1,7 +1,11 @@
 <mat-card class="custom-card">
   <mat-card-title>{{ mediaItem.name }}</mat-card-title>
   <mat-card-content>
-    <div>{{ mediaItem.watchedOn }}</div>
+    <ng-template [ngIf]="mediaItem.watchedOn">
+      <div>watched on {{ mediaItem.watchedOn }}</div>
+    </ng-template>
+
+
     <div>{{ mediaItem.category }}</div>
     <div>{{ mediaItem.year }}</div>
   </mat-card-content>

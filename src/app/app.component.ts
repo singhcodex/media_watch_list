@@ -13,7 +13,11 @@ export class AppComponent {
     medium: 'Series',
     category: 'Science Fiction',
     year: 2020,
-    watchedOn: 2134545,
+    watchedOn: null,
     isFavorite: false
+  };
+
+  onMediaItemDelete(mediaItem: any){
+
   }
 }

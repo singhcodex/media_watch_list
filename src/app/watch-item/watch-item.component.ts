@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-watch-item',
@@ -8,11 +8,12 @@ import { Component, Input } from '@angular/core';
 export class WatchItemComponent{
 
   @Input() mediaItem:any;
-
+  @Output() delete = new EventEmitter();
   constructor() { }
 
   onDelete(){
     console.log("delete clicked");
+    this.delete.emit(this.mediaItem);
   }
 
 
