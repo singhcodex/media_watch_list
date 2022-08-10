@@ -1,0 +1,32 @@
+.form{
+  background-color: aquamarine;
+  border: 1px solid black;
+  width: fit-content;
+  font-size: 1.5em;
+
+  &-ul{
+    text-decoration: none;
+    list-style: none;
+  }
+  &-li{
+    margin: 1.3rem 1.75rem 0.5rem 1.75rem;
+
+    select, input {
+      width: 100%;
+      height: 2em;
+      line-height: 1.3;
+      border-radius: 4px;
+
+    }
+
+  }
+
+  &-button{
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 80%;
+    padding: 1.25px 1.75px;
+  }
+}
